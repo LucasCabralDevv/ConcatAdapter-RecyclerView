@@ -1,4 +1,4 @@
-package com.lucascabral.concatadapterapp
+package com.lucascabral.concatadapterapp.model
 
 data class Tip(
     val description: String

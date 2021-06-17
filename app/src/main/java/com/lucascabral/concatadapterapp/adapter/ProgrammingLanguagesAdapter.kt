@@ -1,12 +1,13 @@
-package com.lucascabral.concatadapterapp
+package com.lucascabral.concatadapterapp.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.lucascabral.concatadapterapp.ProgrammingLanguagesAdapter.*
+import com.lucascabral.concatadapterapp.adapter.ProgrammingLanguagesAdapter.*
 import com.lucascabral.concatadapterapp.databinding.ItemProgrammingLanguageBinding
+import com.lucascabral.concatadapterapp.model.ProgrammingLanguage
 
 class ProgrammingLanguagesAdapter
     : ListAdapter<ProgrammingLanguage, ProgrammingLanguagesViewHolder>(DIFF_CALLBACK) {
@@ -54,7 +55,7 @@ class ProgrammingLanguagesAdapter
         }
 
         companion object {
-            fun create(parent: ViewGroup) : ProgrammingLanguagesViewHolder {
+            fun create(parent: ViewGroup): ProgrammingLanguagesViewHolder {
                 val binding = ItemProgrammingLanguageBinding
                     .inflate(LayoutInflater.from(parent.context), parent, false)
                 return ProgrammingLanguagesViewHolder(binding)

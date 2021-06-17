@@ -1,6 +1,7 @@
-package com.lucascabral.concatadapterapp
+package com.lucascabral.concatadapterapp.model
 
 import androidx.annotation.DrawableRes
+import com.lucascabral.concatadapterapp.R
 
 data class ProgrammingLanguage(
     val name: String,
